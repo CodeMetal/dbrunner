@@ -1,0 +1,46 @@
+
+<div class="panel panel-default" ng-controller="SqlController" style="height:500px;"  >
+  <div class="panel-heading">
+    <h3 class="panel-title">DBRunner</h3>
+  </div>
+  <div>
+  <div>
+  	<form name = "sql-ui" ng-submit="runDDLStatement()">
+		<section>
+		    <div id="one" class="fontstyle">
+		      <div>
+		        <a ui-sref="upsertStatement">Upsert Statements</a>
+		        </div>
+		         <div>
+		        <a ui-sref="ddlStatement">DDL Statements</a>
+		      </div>
+		       <div>
+		        <a ui-sref="queryView">Select Query</a>
+		      </div>
+		      
+		    </div>
+		    <div id="two" class="fontstyle">
+		    		<h4>Run DDL Statements</h4>
+		    	<div class="btn-group" role="group" aria-label="...">
+				  <button type="submit" class="btn btn-primary">Run</button>
+				  <button type="button" class="btn btn-default">Clear</button>
+				</div>
+		     
+		      <div>
+		      <textarea ng-model="sqlModel.sql"></textarea>
+		      </div>
+		      
+		      				<div class="panel panel-default">
+		      					<span ng-bind="sqlModel.resultMessage"></span>
+		      				</div>
+		      
+		    </div>
+		</section>
+	</form>
+				
+				
+
+  </div>
+  
+  </div>
+</div>

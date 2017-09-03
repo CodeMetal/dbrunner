@@ -1,0 +1,35 @@
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">TestSuites</h3>
+  </div>
+  <div class="panel-body">
+  <div ng-controller="TestSuiteController">
+   <button type="button" class="btn btn-primary" ng-click = "createTestSuite()">Create TestSuite</button>
+   <!-- <button type="button" class="btn btn-primary" ng-click = "createTestCase()">Create TestCase</button> -->
+	<br>  
+    <br>
+    	 <!-- <ul >
+	    		<li ng-repeat="testSuite in testSuitesList">{{ testSuite.name }}</li>
+		</ul> -->
+		
+		<table>
+  		<tr ng-repeat="testSuite in testSuitesList">
+	    <td>{{ testSuite.name }}</td>
+		 </tr>
+		</table>
+		
+	<!-- 	<table>
+  		<tr ng-repeat="testCase in testCasesList">
+	    <td>{{ testCase.scenarioName }}</td>
+		 </tr>
+		</table> -->
+		
+		<!-- <ul >
+	    		<li ng-repeat="testCase in testCasesList">{{ testCase.scenarioName }}</li>
+		</ul> -->
+		
+  </div>
+  
+  </div>
+</div>
